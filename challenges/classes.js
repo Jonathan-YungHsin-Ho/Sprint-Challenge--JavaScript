@@ -38,10 +38,10 @@ class CubeMaker extends CuboidMakerClass {
     this.side = cubeAttrs.side; // If inherited attributes and methods from CuboidMakerClass are used for volume and surface area calculations, this attribute assignment isn't necessary
   }
   cubeVolume() {
-    return this.side * this.side * this.side; // could also use the following code, although it may be slower: return Math.pow(this.side, 3);
+    return this.side ** 3;
   }
   cubeSA() {
-    return 6 * this.side * this.side; // could also use the following code, although it may be slower: return 6 * Math.power(this.side, 2);
+    return 6 * this.side ** 2;
   }
 }
 
