@@ -207,7 +207,7 @@ zooAnimals = [
   }
 ];
 
-console.table(zooAnimals);
+// console.table(zooAnimals);
 
 /* Request 1: .forEach()
 
