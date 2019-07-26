@@ -42,12 +42,12 @@ Edit this document to include your answers after each question. Make sure to lea
 
 4. Describe the four rules of the 'this' keyword.
 
-5. **Window Binding:** When none of the other rules apply (in other words, when we're in global scope), the "this" keyword defaults to the window/console object (unless we're in Strict Mode, in which case "this" returns undefined).
-6. **Implicit Binding:** Whenever a function is called by a preceding dot, the object to the left of the dot at call time gets "this."
-7. **New Binding:** Whenever a constructor function is used, "this" refers to the specific instance of the object that is created and returned by the constructor function.
-8. **Explicit Binding:** "this" is explicitly defined whenever the **.bind**, **.call**, or **.apply** methods are used in JavaScript.
+- **Window Binding:** When none of the other rules apply (in other words, when we're in global scope), the "this" keyword defaults to the window/console object (unless we're in Strict Mode, in which case "this" returns undefined).
+- **Implicit Binding:** Whenever a function is called by a preceding dot, the object to the left of the dot at call time gets "this."
+- **New Binding:** Whenever a constructor function is used, "this" refers to the specific instance of the object that is created and returned by the constructor function.
+- **Explicit Binding:** "this" is explicitly defined whenever the **.bind**, **.call**, or **.apply** methods are used in JavaScript.
 
-5) Why do we need super() in an extended class?
+5. Why do we need super() in an extended class?
    > We need **super()** in an extended class because it calls the parent class and passes its parameters to the child (or extended) class. The **super()** abstracts away the **.call()** syntax used for binding in constructor functions.
 
 ## Project Set up
