@@ -35,6 +35,13 @@ class CubeMaker extends CuboidMakerClass {
     this.length = cubeAttrs.side;
     this.width = cubeAttrs.side;
     this.height = cubeAttrs.side;
+    this.side = cubeAttrs.side; // If inherited attributes and methods from CuboidMakerClass are used for volume and surface area calculations, this attribute assignment isn't necessary
+  }
+  cubeVolume() {
+    return this.side * this.side * this.side; // could also use the following code, although it may be slower: return Math.pow(this.side, 3);
+  }
+  cubeSA() {
+    return 6 * this.side * this.side; // could also use the following code, although it may be slower: return 6 * Math.power(this.side, 2);
   }
 }
 
@@ -42,5 +49,10 @@ const cube = new CubeMaker({
   side: 4
 });
 
+// The following calculations use inherited methods from CuboidMakerClass, indicating that methods specific to CubeMaker aren't necessary
 console.log(cube.volume());
 console.log(cube.surfaceArea());
+
+// The following calculations uses methods specific to CubeMaker
+console.log(cube.cubeVolume());
+console.log(cube.cubeSA());

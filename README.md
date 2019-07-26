@@ -30,7 +30,7 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
-   > The **forEach()** method doesn't return anything, but iterates through each element in an array and calls a function on each element of that array; it can actually change or mutate the original array. The **map()** method returns a new array of the same size, but leaves the original array unmutated.
+   > The **forEach()** method doesn't return anything, but it iterates through each element in an array and calls a function on each element of that array; it can actually change or mutate the original array. The **map()** method returns a new array of the same size, but leaves the original array unmutated.
 
 2. What is the difference between a function and a method?
 
@@ -38,7 +38,7 @@ Edit this document to include your answers after each question. Make sure to lea
 
 3. What is closure?
 
-   > A closure is the combination of a function bundled together with references to its lexical environment, or its surrounding state. Closure gives us access to an outer functions scope from within an inner function, since the inner function will have access to variables in the outer function scope even after the outer function has returned.
+   > A closure is the combination of a function bundled together with references to its lexical environment, or its surrounding state. Closure gives us access to an outer function's scope from within an inner function. Additionally, a returned inner function will have access to the variables in the outer function scope even after the outer function has executed and returned and is off the call stack.
 
 4. Describe the four rules of the 'this' keyword.
 

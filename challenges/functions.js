@@ -33,7 +33,7 @@ console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice t
 
 // Explanation:
 
-// 'nestedfunction()' can access the variable 'internal' due to closure, because it has access to varaibles in the outer function scope, the outer function being 'myFunction()'. In other words, 'nestedfunction()' can "look outside" its function scope and access the 'internal' variable (as well as the 'external' variable). These variables are part of its lexical environment.
+// 'nestedfunction()' can access the variable 'internal' due to closure, because it has access to variables in the outer function scope, the outer function being 'myFunction()'. In other words, 'nestedfunction()' can "look outside" its function scope and access the 'internal' variable (as well as the 'external' variable). These variables are part of its lexical environment.
 
 const external = "I'm outside the function";
 
